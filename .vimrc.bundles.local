@@ -1,0 +1,4 @@
+Plugin 'embear/vim-foldsearch'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'vim-airline/vim-airline'
+

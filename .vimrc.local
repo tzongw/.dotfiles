@@ -1,0 +1,69 @@
+set nocursorline " don't highlight current line
+
+" cursor shape
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+
+" vimdiff
+map <silent> <leader>1 :diffget 1<CR> :diffupdate<CR>
+map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
+map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
+
+" set relativenumber
+
+" keyboard shortcuts
+inoremap jj <ESC>
+noremap <C-c> <C-w>c
+
+" jedi
+let g:jedi#goto_assignments_command = ""
+let g:jedi#usages_command = "<leader>s"
+
+" nerdtree
+let NERDTreeIgnore = ['\.pyc$']
+
+" tagbar
+let g:tagbar_width = 30
+
+nnoremap <leader>c :lcd %:p:h<CR>
+nnoremap <leader>w :GitGutterStageHunk<CR>
+nnoremap <leader>q :GitGutterUndoHunk<CR>
+
+" disable preview
+set completeopt-=preview
+
+" indent
+set shiftwidth=4                                             " normal mode indentation commands use 4 spaces
+set softtabstop=4                                            " insert mode tab and backspace use 4 spaces
+
+" highlight search
+"set hlsearch
+"nmap <leader>hl :let @/ = ""<CR>
+
+" gui settings
+if (&t_Co == 256 || has('gui_running'))
+  if ($TERM_PROGRAM == 'iTerm.app')
+    colorscheme solarized
+  else
+    let g:rehash256 = 1
+    colorscheme molokai
+  endif
+endif
+
+" Disambiguate ,a & ,t from the Align plugin, making them fast again.
+"
+" This section is here to prevent AlignMaps from adding a bunch of mappings
+" that interfere with the very-common ,a and ,t mappings. This will get run
+" at every startup to remove the AlignMaps for the *next* vim startup.
+"
+" If you do want the AlignMaps mappings, remove this section, remove
+" ~/.vim/bundle/Align, and re-run rake in maximum-awesome.
+function! s:RemoveConflictingAlignMaps()
+  if exists("g:loaded_AlignMapsPlugin")
+    AlignMapsClean
+  endif
+endfunction
+command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
+silent! autocmd VimEnter * RemoveConflictingAlignMaps
