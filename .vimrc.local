@@ -27,6 +27,7 @@ let NERDTreeIgnore = ['\.pyc$']
 " tagbar
 let g:tagbar_width = 30
 
+nnoremap <leader>t :tabnew<space>
 nnoremap <leader>c :lcd %:p:h<CR>
 nnoremap <leader>w :GitGutterStageHunk<CR>
 nnoremap <leader>q :GitGutterUndoHunk<CR>
