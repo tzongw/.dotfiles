@@ -6,6 +6,10 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+if filereadable(expand("~/.dotfiles/whitespace.vim"))
+  source ~/.dotfiles/whitespace.vim
+endif
+
 " vimdiff
 map <silent> <leader>1 :diffget 1<CR> :diffupdate<CR>
 map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
