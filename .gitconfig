@@ -1,0 +1,22 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[core]
+	autocrlf = false
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[user]
+	email = tzongw@gmail.com
+	name = tzongw
+[push]
+	default = simple
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
+[difftool]
+	prompt = false
