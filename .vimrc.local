@@ -1,5 +1,7 @@
 set nocursorline " don't highlight current line
 
+:set pastetoggle=<F1>
+
 " cursor shape
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
