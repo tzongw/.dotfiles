@@ -123,4 +123,5 @@ if [[ $(uname) =~ "CYGWIN" ]]; then
     }
 fi
 
-
+alias py3='source ~/py3/bin/activate'
+alias py2='deactivate'
