@@ -125,3 +125,4 @@ fi
 
 alias py3='source ~/py3/bin/activate'
 alias py2='deactivate'
+alias tokyo='ssh -i ~/.ssh/tokyo.pem ubuntu@ec2-13-230-192-153.ap-northeast-1.compute.amazonaws.com'
