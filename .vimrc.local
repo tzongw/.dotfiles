@@ -28,7 +28,7 @@ let g:jedi#goto_assignments_command = ""
 let g:jedi#usages_command = "<leader>s"
 
 " nerdtree
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.vimprj$']
 
 " tagbar
 let g:tagbar_width = 30
