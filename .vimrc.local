@@ -34,6 +34,7 @@ let NERDTreeIgnore = ['\.pyc$', '\.vimprj$']
 let g:tagbar_width = 30
 
 nnoremap <leader>t :tabnew<space>
+nnoremap <leader>x :tabc<CR>
 nnoremap <leader>c :lcd %:p:h<CR>
 nnoremap <leader>w :GitGutterStageHunk<CR>
 nnoremap <leader>q :GitGutterUndoHunk<CR>
@@ -44,6 +45,8 @@ let g:OrigPWD=getcwd()
 if filereadable(g:AutoSessionFile)
     if argc() == 0
         au VimEnter * call EnterHandler()
+        au VimEnter * NERDTree
+        au VimLeave * NERDTreeClose
         au VimLeave * call LeaveHandler()
     endif
 endif
