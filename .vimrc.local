@@ -29,6 +29,7 @@ nnoremap <leader>d :YcmCompleter GoTo<CR>
 
 " jedi
 let g:jedi#usages_command = "<leader>s"
+let g:jedi#goto_assignments_command = "<leader>v"
 
 " nerdtree
 let NERDTreeIgnore = ['\.pyc$', '\.vimprj$', '\.o$']
