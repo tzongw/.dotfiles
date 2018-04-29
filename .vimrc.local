@@ -30,7 +30,7 @@ let g:ycm_confirm_extra_conf = 0
 
 " jedi
 let g:jedi#usages_command = "<leader>s"
-let g:jedi#goto_assignments_command = "<leader>v"
+let g:jedi#goto_assignments_command = "<leader>d"
 
 " nerdtree
 let NERDTreeIgnore = ['\.pyc$', '\.vimprj$', '\.o$']
