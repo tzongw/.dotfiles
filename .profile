@@ -4,6 +4,7 @@ export CPATH=/usr/local/include
 export LIBRARY_PATH=/usr/local/lib
 alias gD='git difftool'
 alias utf8='iconv -f GB18030 -t UTF-8'
+alias py3='source ~/py3/bin/activate'
 alias py2='deactivate'
 alias protoc++='protoc --cpp_out=.'
 alias cr2nl="perl -pi -e 's/\r/\n/g'"
@@ -58,8 +59,5 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     export xdir=~/Library/Developer/Xcode/DerivedData
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
     export NODE_PATH="/usr/local/lib/node_modules"
-else
-    alias py3='source ~/py3/bin/activate'
-    alias p36='source ~/p36/bin/activate'
 fi
 
