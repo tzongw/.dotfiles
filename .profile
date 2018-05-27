@@ -45,6 +45,7 @@ if [[ $(uname) =~ "CYGWIN" ]]; then
     }
 elif [[ $(uname) =~ "Darwin" ]]; then
     alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+    alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
     alias tvim='mvim --remote-tab-silent'
     alias xcode="open *.xcworkspace || open *.xcodeproj"
     alias -s txt=tvim
@@ -56,6 +57,7 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias -s mm=tvim
     export xdir=~/Library/Developer/Xcode/DerivedData
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
+    export NODE_PATH="/usr/local/lib/node_modules"
 else
     alias py3='source ~/py3/bin/activate'
     alias p36='source ~/p36/bin/activate'
