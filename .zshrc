@@ -84,46 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export LC_ALL="zh_CN.UTF-8"
-alias gD='git difftool'
-alias utf8='iconv -f GB18030 -t UTF-8'
-decode () {
-    echo $1 | base64 -d
-}
-
-mkfile () {
-        if [ -f "$1" ]; then
-            echo "'$1' already exists!"
-            return 1
-        fi
-        ext=${1##*.}
-        case $ext in
-            py)
-                script=python
-                ;;
-            sh)
-                script=bash
-                ;;
-            *)
-                echo "unknown type: $ext"
-                return 1
-                ;;
-        esac
-        echo "#!/usr/bin/env $script\n# -*- coding: utf-8 -*-" > "$1"
-        chmod +x "$1"
-        vim "$1"
-}
-
-if [[ $(uname) =~ "CYGWIN" ]]; then
-    alias c='clip'
-    alias p='cat /dev/clipboard'
-    export home=/cygdrive/c/Users/tzongw
-    open () {
-            explorer $(cygpath -w "$1")
-    }
-fi
-
-alias py3='source ~/py3/bin/activate'
-alias p36='source ~/p36/bin/activate'
-alias py2='deactivate'
-alias aws='ssh -i ~/.ssh/tokyo.pem ubuntu@ec2-13-230-192-153.ap-northeast-1.compute.amazonaws.com'
+source ~/.dotfiles/.profile
