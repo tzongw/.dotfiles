@@ -9,6 +9,7 @@ alias py2='deactivate'
 alias protoc++='protoc --cpp_out=.'
 alias cr2nl="perl -pi -e 's/\r/\n/g'"
 alias ggcr='git push origin HEAD:refs/for/$(git_current_branch)'
+alias gcld='git clone --recursive --depth=1'
 plugins=(git z zsh-navigation-tools)
 
 decode () {
