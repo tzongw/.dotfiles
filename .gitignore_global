@@ -3,4 +3,9 @@
 *.log
 *.out
 .vimprj
+*~
+.DS_Store
+.idea
+*.log
 xcshareddata
+xcuserdata
