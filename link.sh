@@ -3,7 +3,7 @@
 cd
 ln -s .dotfiles/.gitignore_global .agignore
 ln -s .dotfiles/.gitignore_global .
-ln -s .dotfiles/..gitconfig .
+ln -s .dotfiles/.gitconfig .
 ln -s .dotfiles/.vimrc .
 ln -s .dotfiles/.vimrc.bundles .
 ln -s .dotfiles/.vimrc.bundles.local .
