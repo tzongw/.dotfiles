@@ -12,7 +12,7 @@
 [push]
 	default = simple
 [merge]
-	tool = vimdiff
+	tool = tortoisemerge
 [diff]
 	tool = vimdiff
 [mergetool]
