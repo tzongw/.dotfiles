@@ -76,12 +76,8 @@ set softtabstop=4                                            " insert mode tab a
 
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
-  if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
-  else
-    let g:rehash256 = 1
-    colorscheme molokai
-  endif
+  let g:rehash256 = 1
+  colorscheme molokai
 endif
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
