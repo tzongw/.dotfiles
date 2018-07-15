@@ -1,6 +1,8 @@
 set nocursorline " don't highlight current line
 
 :set pastetoggle=<F1>
+noremap <F2> :set invnumber<CR>
+inoremap <F2> <C-O>:set invnumber<CR>
 
 " cursor shape
 let &t_ti.="\e[1 q"
