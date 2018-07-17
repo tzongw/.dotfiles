@@ -8,6 +8,7 @@ ln -s .dotfiles/.vimrc .
 ln -s .dotfiles/.vimrc.bundles .
 ln -s .dotfiles/.vimrc.bundles.local .
 ln -s .dotfiles/.vimrc.local .
+ln -s .dotfiles/.tmux.conf .
 grep dotfiles .zshrc > /dev/null || echo 'source .dotfiles/.profile' >> .zshrc
 mkdir .vim
 mkdir .vim/bundle
