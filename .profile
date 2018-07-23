@@ -52,6 +52,7 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
     alias tvim='mvim --remote-tab-silent'
     alias xcode="open *.xcworkspace || open *.xcodeproj"
+    alias gds='git difftool -t sourcetree'
     alias -s txt=tvim
     alias -s h=tvim
     alias -s c=tvim
