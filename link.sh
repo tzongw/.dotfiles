@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 cd
-grep dotfiles .zshrc > /dev/null || echo 'source .dotfiles/.profile' >> .zshrc
+grep dotfiles .zshrc > /dev/null || echo 'source ~/.dotfiles/.profile' >> .zshrc
 mkdir .vim
 mkdir .vim/bundle
 mkdir .vim/colors
