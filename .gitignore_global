@@ -9,3 +9,7 @@
 xcshareddata
 xcuserdata
 *.xcworkspace
+Carthage
+node_modules
+dump*.rdb
+nodes-*.conf
