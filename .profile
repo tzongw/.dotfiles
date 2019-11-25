@@ -66,6 +66,5 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     export xdir=~/Library/Developer/Xcode/DerivedData
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
     export NODE_PATH="/usr/local/lib/node_modules"
-    export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 fi
 
