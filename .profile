@@ -56,6 +56,8 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias gds='git difftool -t sourcetree'
     alias gdsc='git difftool -t sourcetree --cached'
     alias gms='git mergetool -t sourcetree'
+    alias pi='pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple'
+    alias piu='pi --user'
     alias -s txt=tvim
     alias -s h=tvim
     alias -s c=tvim
@@ -66,5 +68,6 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     export xdir=~/Library/Developer/Xcode/DerivedData
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
     export NODE_PATH="/usr/local/lib/node_modules"
+    export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 fi
 
