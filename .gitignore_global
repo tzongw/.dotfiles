@@ -13,3 +13,4 @@ Carthage
 node_modules
 dump*.rdb
 nodes-*.conf
+venv

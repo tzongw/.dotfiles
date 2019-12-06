@@ -69,5 +69,12 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
     export NODE_PATH="/usr/local/lib/node_modules"
     export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+    dir () {
+            dst="$1"
+            if [ -f "$1" ]; then
+                dst=$(dirname "$1")
+            fi
+            open "$dst"
+    }
 fi
 
