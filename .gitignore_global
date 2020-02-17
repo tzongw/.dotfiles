@@ -15,3 +15,5 @@ dump*.rdb
 nodes-*.conf
 venv
 node_modules
+Pods
+dist

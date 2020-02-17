@@ -19,8 +19,10 @@
 [difftool]
 	prompt = false
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait --diff $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait $MERGED
 	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg
