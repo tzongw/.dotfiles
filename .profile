@@ -11,6 +11,7 @@ alias protoc++='protoc --cpp_out=.'
 alias cr2nl="perl -pi -e 's/\r/\n/g'"
 alias ggcr='git push origin HEAD:refs/for/$(git_current_branch)'
 alias gcld='git clone --recursive --depth=1'
+alias pi='pip install -i https://mirrors.aliyun.com/pypi/simple'
 
 decode () {
     echo $1 | base64 -d
@@ -46,6 +47,8 @@ if [[ $(uname) =~ "CYGWIN" ]]; then
     open () {
             explorer $(cygpath -w "$1")
     }
+elif [[ $(uname) =~ "Linux" ]]; then
+    export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 elif [[ $(uname) =~ "Darwin" ]]; then
     alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
     alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
