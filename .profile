@@ -14,6 +14,7 @@ alias cr2nl="perl -pi -e 's/\r/\n/g'"
 alias ggcr='git push origin HEAD:refs/for/$(git_current_branch)'
 alias gcld='git clone --recursive --depth=1'
 alias pi='pip install -i https://mirrors.aliyun.com/pypi/simple'
+alias attach='ps aux | grep -v grep | grep "tmux -CC attach" || tmux -CC attach'
 
 decode () {
     echo $1 | base64 -d
