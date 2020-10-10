@@ -64,6 +64,7 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias gms='git mergetool -t sourcetree'
     alias pi='pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple'
     alias piu='pi --user'
+    alias sed=gsed
     alias -s txt=tvim
     alias -s h=tvim
     alias -s c=tvim
