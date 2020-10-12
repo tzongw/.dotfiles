@@ -63,6 +63,7 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias gds='git difftool -t sourcetree'
     alias gdsc='git difftool -t sourcetree --cached'
     alias gms='git mergetool -t sourcetree'
+    alias sed=gsed
     alias -s txt=tvim
     alias -s h=tvim
     alias -s c=tvim
