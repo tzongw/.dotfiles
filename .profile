@@ -13,7 +13,8 @@ alias protoc++='protoc --cpp_out=.'
 alias cr2nl="perl -pi -e 's/\r/\n/g'"
 alias ggcr='git push origin HEAD:refs/for/$(git_current_branch)'
 alias gcld='git clone --recursive --depth=1'
-alias pi='pip install -i https://mirrors.aliyun.com/pypi/simple'
+alias pi='pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple'
+alias piu='pi --user'
 alias attach='ps aux | grep -v grep | grep "tmux -CC attach" || tmux -CC attach'
 
 decode () {
@@ -51,7 +52,7 @@ if [[ $(uname) =~ "CYGWIN" ]]; then
             explorer $(cygpath -w "$1")
     }
 elif [[ $(uname) =~ "Linux" ]]; then
-    export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+    export PATH="$HOME/bin:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
 elif [[ $(uname) =~ "Darwin" ]]; then
     alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
     alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
@@ -62,8 +63,6 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     alias gds='git difftool -t sourcetree'
     alias gdsc='git difftool -t sourcetree --cached'
     alias gms='git mergetool -t sourcetree'
-    alias pi='pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple'
-    alias piu='pi --user'
     alias -s txt=tvim
     alias -s h=tvim
     alias -s c=tvim
