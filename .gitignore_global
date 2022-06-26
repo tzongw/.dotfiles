@@ -18,4 +18,5 @@ node_modules
 Pods
 dist
 cmake-build-*
-build
+3rd/opencv/android
+appendonlydir

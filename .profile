@@ -16,6 +16,7 @@ alias gcld='git clone --recursive --depth=1'
 alias pi='pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple'
 alias piu='pi --user'
 alias attach='ps ux | grep -v grep | grep "tmux -CC attach" || tmux -CC attach'
+alias redis-cli='redis-cli -3 -c'
 
 decode () {
     echo $1 | base64 -d
