@@ -6,11 +6,11 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 alias gD='git difftool'
 alias gDc='git difftool --cached'
 alias utf8='iconv -f GB18030 -t UTF-8'
-alias py3='source ~/py3/bin/activate'
-alias py2='deactivate'
 alias protoc++='protoc --cpp_out=.'
 alias cr2nl="perl -pi -e 's/\r/\n/g'"
 alias ggcr='git push origin HEAD:refs/for/$(git_current_branch)'
@@ -76,7 +76,6 @@ elif [[ $(uname) =~ "Darwin" ]]; then
     export xdir=~/Library/Developer/Xcode/DerivedData
     export DEVELOPER_DIR=/Applications/XCode.app/Contents/Developer
     export NODE_PATH="/usr/local/lib/node_modules"
-    #export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
     dir () {
             dst="$1"
             if [ -f "$1" ]; then
