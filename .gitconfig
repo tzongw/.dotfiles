@@ -26,3 +26,5 @@
 	trustExitCode = true
 [commit]
 	template = ~/.stCommitMsg
+[http]
+	sslverify = false
