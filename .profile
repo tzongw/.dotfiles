@@ -92,11 +92,11 @@ fi
 
 autoload -U add-zsh-hook
 load_venv() {
-  if [[ -z "$VIRTUAL_ENV" ]] && [[ -d "venv" ]]; then
-    source "venv/bin/activate"
-    if [[ -f ".env" ]]; then
-        source ".env"
+    if [[ -z "$VIRTUAL_ENV" ]] && [[ -d "venv" ]]; then
+        source "venv/bin/activate"
+        if [[ -f ".env" ]]; then
+            source ".env"
+        fi
     fi
-  fi
 }
 add-zsh-hook chpwd load_venv
