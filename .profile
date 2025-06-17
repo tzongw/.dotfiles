@@ -56,7 +56,7 @@ if [[ $(uname) =~ "CYGWIN" ]]; then
             explorer $(cygpath -w "$1")
     }
 elif [[ $(uname) =~ "Linux" ]]; then
-    # export PATH="$HOME/bin:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
+    export PATH="$HOME/bin:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
 elif [[ $(uname) =~ "Darwin" ]]; then
     alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
     alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
